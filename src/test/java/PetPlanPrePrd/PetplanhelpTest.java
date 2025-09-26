@@ -4,7 +4,7 @@ import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 import java.util.List;
 
-public class Petplanhelp extends BaseClass {
+public class PetplanhelpTest extends BaseClass {
 
     @Test
     public void HelpAndContact() throws InterruptedException {
@@ -37,7 +37,7 @@ public class Petplanhelp extends BaseClass {
         driver.findElement(By.xpath("//*[@id='name_copy-lastName']")).sendKeys("Wayne");
 
 //DOB
-        String year= "1997" ;String month="06";String day="20";;
+        String year= "1997" ;String month="06";String day="20";
         String DOB = day+"/"+month+"/"+year;
 
 //Picking the DOB

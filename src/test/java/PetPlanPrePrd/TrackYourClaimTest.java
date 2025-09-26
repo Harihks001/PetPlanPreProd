@@ -3,7 +3,7 @@ package PetPlanPrePrd;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class TrackYourClaim extends BaseClass {
+public class TrackYourClaimTest extends BaseClass {
 
     @Test
     public void TrackMyPetInsuranceClaim() throws InterruptedException {
@@ -11,6 +11,7 @@ public class TrackYourClaim extends BaseClass {
         driver.get("https://forms.petplan.co.uk/existing-customers/track-your-claim/");
         acceptCookies();
         System.out.println("Website Launched and Cookies Accepted");
+        System.out.println("All Test passed");
 
 //Capture Policy Number
         driver.findElement(By.id("txtPolicyNumber")).sendKeys("246314236");
